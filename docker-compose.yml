@@ -1,0 +1,11 @@
+version: '3'
+services:
+  download_proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        Version: v1
+    ports:
+      - "11808:8080"
+    container_name: download_proxy
