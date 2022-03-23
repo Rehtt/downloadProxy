@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	//	/https/baidu.com
+	//	http://127.0.0.1:8080/https/baidu.com
 	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
 
 		scheme, url, get := strings.Cut(request.RequestURI[1:], "/")
